@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/ceb1d23e01.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./my.css" />
+  <title>Kebab & Grill - About</title>
+</head>
+
+<body class="p-0 m-0 border-0 bd-example m-0 border-0">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary py-3">
+    <div class="container">
+      <div class="d-flex">
+        <img src="image/logo.png" class="img-fluid" style="height: 40px;" alt="TastyStop">
+        <a href="./index.html" class="navbar-brand fs-5 fw-bold ps-2">TastyStop</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link fs-5" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link fs-5 active-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./menu.html" class="nav-link fs-5">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link fs-5">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-3">
+          <a href="#"><i class="fa-solid fa-user-plus"></i></a>
+          <button class="btn-reservation" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            Reservation
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End NavBar -->
+  <!-- Modal -->
+  <div class="modal align-content-center fade" id="reservationModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">
+            Reserve a table
+          </h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form class="row g-3 justify-content-center">
+            <div class="col-sm-12">
+              <label for="validationDefault01" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="validationDefault01" required>
+            </div>
+            <div class="col-sm-12">
+              <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="col-sm-12">
+              <label for="validationDefault04" class="form-label">Number of Guests</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 & More</option>
+              </select>
+            </div>
+            <div class="col-sm-12">
+              <label for="date" class="form-label">Date of Reservation</label>
+              <input type="date" class="form-control" id="date" name="date">
+            </div>
+            <div class="col-sm-12">
+              <label for="time" class="form-label">Time of Reservation</label>
+              <input type="time" class="form-control" id="time" name="time">
+            </div>
+            <div class="col-sm-12">
+              <label for="validationDefault03" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-sm-12">
+              <label for="exampleFormControlTextarea1" class="form-label">Special Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-sm-12">
+              <button class="btn btn-primary text-center" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal NavBar -->
+  <!-- Section Bg -->
+  <section class="container-fluid d-flex align-items-center justify-content-center" style="
+      background-image: url('image/img-about-us.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 45vh;">
+    <div class="container text-center">
+      <h1 class="display-2 text-white mb-3">About US</h1>
+      <div>
+        <div class="d-flex gap-3 justify-content-center text-uppercase">
+          <p class="text-white fs-3">
+            <a class="text-decoration-none text-orange-red" href="index.html">Home</a>
+          </p>
+          <p class="text-white fs-3 active">About</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Here Start Container -->
+  <div class="container py-5">
+    <h2 class="pt-5 text-center">About Us</h2>
+    <p class="text-center pb-5">Learn more About Us</p>
+    <div class="row">
+      <div class="col-sm-12 col-lg-7 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <img src="./image/bg-cover.jpg" class="img-fluid mb-4" alt="">
+      </div>
+      <div class="col-sm-12 col-lg-5" data-aos="fade-up" data-aos-delay="250">
+        <div class="content ps-0 ps-lg-5">
+          <h3>Our Mision</h3>
+          <p>
+            At TastyStop, our goal is simple - we want to provide the highest quality Kebab and the best customer
+            service anyone can have. Since the day we started our bar, we have maintained a high level of transparency
+            with our customers. We built the TastyStop brand as a community and have gained some very loyal and
+            incredible customers in the process.
+          </p>
+          <p>Inspired by our traditional home cooking, our menu highlights ancient, nutrient-rich crops that have been
+            cultivated around the world for centuries. We carefully source our ingredients in collaboration with small
+            farmers in Europe and local producers in America.</p>
+          <!-- Video Cooking -->
+          <br>
+          <video style="width: 100%; height: 300px;" poster="image/cooking-kebab.jpg" class="img-fluid" controls>
+            <source src="./image/cooking-kebab.mp4" type="video/mp4">
+            <source src="./image/cooking-kebab.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Container-->
+  <div class="container-fluid py-5 bg-second-color">
+    <div class="container my-5">
+      <!-- Row-->
+      <div class="row align-items-center ">
+        <!-- Col -->
+        <div class="col-lg-6">
+          <!-- Row -->
+          <div class="row g-3">
+            <div class="col-6 text-start">
+              <img class="img-fluid rounded w-100 wow zoomIn" src="./image/about-1.jpg" alt="" />
+            </div>
+            <div class="col-6 text-start">
+              <img class="img-fluid rounded w-75 wow zoomIn" src="./image/about-2.jpg" style="margin-top: 25%" alt="" />
+            </div>
+            <div class="col-6 text-end">
+              <img class="img-fluid rounded w-75 wow zoomIn" src="./image/about-3.jpg" alt="" />
+            </div>
+            <div class="col-6 text-end">
+              <img class="img-fluid rounded w-100 wow zoomIn" src="./image/about-4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- Col -->
+        <div class="col-lg-6">
+          <p class="text-start text-uppercase p-0">About us</p>
+          <h1 class="mb-4">
+            Welcome to our Restaurant!</h1>
+          <p class="mb-3">
+            We’re passionate about our food
+          </p>
+          <p class="mb-3">
+            Our Restaurant is a collective of amazing people striving to build delightful Austrian Cuisine.
+          </p>
+          <!-- Row -->
+          <div class="row g-4">
+            <div class="col-sm-5">
+              <!-- Button modal -->
+              <button class="btn-about-us" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Viev More
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="exampleModalLabel">
+                        Welcome to TastyStop
+                      </h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-5 ">
+                          <img class="img-fluid" src="./image/bg-cover.jpg" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h3 class="pt-3">
+                            Welcome to Meal, where food speaks with your
+                            palate.
+                          </h3>
+                          <p class="pt-3">
+                            Our restaurant was born out of a love for eggs and a desire to share that passion with
+                            others. Our founder, Jack bloom, has always been fascinated by the versatility and nutrition
+                            of eggs, and he wanted to create a restaurant that celebrated this incredible ingredient
+                          </p>
+                          <p>
+                            At our restaurant, we believe that eggs are one of the most versatile and delicious
+                            ingredients out there. That's why we've made it our mission to create exceptional egg-based
+                            dishes that showcase the incredible flavors and textures that eggs can offer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container Fluid Restaurant Ambient -->
+  <div class="container-fluid py-5 bg-ambient h-100">
+    <h3 class="py-3 text-center">Restaurant Ambients</h3>
+    <div class="row justify-content-center gap-5 text-center py-3">
+      <div class="col-sm-12 col-lg-2 fs-5"><i class="fa-solid fa-wifi px-2"></i> Free Wifi</div>
+      <div class="col-sm-12 col-lg-2 fs-5"><i class="fa-solid fa-smoking px-2"></i> Smoking Zone</div>
+      <div class="col-sm-12 col-lg-2 fs-5"><i class="fa-solid fa-music px-2"></i> Live Music</div>
+      <div class="col-sm-12 col-lg-2 fs-5"><i class="fa-solid fa-car px-2"></i>Free Parking</div>
+    </div>
+  </div>
+  <!-- Container Fluid -->
+  <div class="container-fluid bg-footer text-white">
+    <div class="container py-5">
+      <!-- Footer -->
+      <div class="row justify-content-center row-gap-4">
+        <!-- Col - 1 -->
+        <div class="col-sm-12 col-lg-3 pt-4 pt-sm-4 p-0 pe-5">
+          <h4 class="fs-3">TastyStop</h4>
+          <ul class="nav flex-column">
+            <p class="nav-item mb-2">Be the first to know about new collections, special events, and what's going on at
+              Our Place. We are creative.</p>
+          </ul>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#"><i class="sc-icons fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="sc-icons fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="sc-icons fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <!-- Col - 2 -->
+        <div class="col-sm-12 col-lg-3 pt-4 pt-sm-4 p-0">
+          <h4>Overview</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+            <li class="nav-item mb-2"><a href="./about.html" class="text-white text-decoration-none">About</a></li>
+            <li class="nav-item mb-2"><a href="./menu.html" class="text-white text-decoration-none">Menu</a></li>
+            <li class="nav-item mb-2"><a href="./contact.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Col - 3 -->
+        <div class="col-sm-12 col-lg-3 pt-4 pt-sm-4 p-0">
+          <h4>Resources</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">HelpCenter</li>
+            <li class="nav-item mb-2">Terms of use</li>
+            <li class="nav-item mb-2">Privacy Policy</li>
+            <li class="nav-item mb-2">Teams</li>
+            <li class="nav-item mb-2">FAQ</li>
+          </ul>
+        </div>
+        <!-- Col - 4 -->
+        <div class="col-sm-12 col-md-2 pt-3 pt-sm-4 p-0">
+          <h4>Location</h4>
+          <ul class="nav">
+            <img class="img-fluid" src="image/belgium-map.png" alt="">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="w-100 m-0">
+    <div class="container text-center py-3">
+      <p>Copyright © 2024 The TastyStop</p>
+    </div>
+  </div>
+  <!-- Footer End -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

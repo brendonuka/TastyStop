@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/ceb1d23e01.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./my.css" />
+  <title>TastyStop</title>
+</head>
+
+<body class="p-0 m-0 border-0 bd-example m-0 border-0">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary py-3">
+    <div class="container">
+      <div class="d-flex">
+        <img src="image/logo.png" class="img-fluid" style="height: 40px;" alt="TastyStop">
+        <a href="./index.html" class="navbar-brand fs-5 fw-bold ps-2">TastyStop</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link active-link fs-5" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link fs-5">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./menu.html" class="nav-link fs-5">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link fs-5">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="#"><i class="fa-solid fa-user-plus"></i></a>
+          <button class="btn-reservation" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            Reservation
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End NavBar -->
+  <!-- Modal -->
+  <div class="modal align-content-center fade" id="reservationModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">
+            Reserve a table
+          </h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form class="row g-3 justify-content-center">
+            <div class="col-sm-12">
+              <label for="validationDefault01" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="validationDefault01" required>
+            </div>
+            <div class="col-sm-12">
+              <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="col-sm-12">
+              <label for="validationDefault04" class="form-label">Number of Guests</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 & More</option>
+              </select>
+            </div>
+            <div class="col-sm-12">
+              <label for="date" class="form-label">Date of Reservation</label>
+              <input type="date" class="form-control" id="date" name="date">
+            </div>
+            <div class="col-sm-12">
+              <label for="time" class="form-label">Time of Reservation</label>
+              <input type="time" class="form-control" id="time" name="time">
+            </div>
+            <div class="col-sm-12">
+              <label for="validationDefault03" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-sm-12">
+              <label for="exampleFormControlTextarea1" class="form-label">Special Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-sm-12">
+              <button class="btn btn-primary text-center" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal NavBar -->
+  <!-- Container -->
+  <div class="container-fluid bg-my-color">
+    <div class="container py-5">
+      <div class="row gy-5 align-items-center">
+        <!-- Col-lg-3 -->
+        <div class="col-sm-12 col-lg-7">
+          <p>Easy way to order your food!</p>
+          <h1 class="title-section">Freshly grilled kebab prepared with passion, served with elegance.</h1>
+          <p class="para-section">
+            From delicious kebabs to grilled specialties, every bite is a true journey into the world of flavors.
+          </p>
+          <a href="#our-menu">
+            <button type="button" class="btn-view-menu">Explore Our Menu</button>
+          </a>
+        </div>
+        <!-- Col -->
+        <div class="col-sm-12 col-md-5 text-end">
+          <img class="rounded-pill img-fluid" src="image/bg-first-sk.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container py-5">
+    <div class="col-sm-12 col-lg-6 m-auto">
+      <h3 class="text-center pt-3">Our Categoris</h3>
+      <p class="text-center pb-3">In this category you will find fresh, natural and carefully selected products, ranging
+        from organic fruits and vegetables, to traditional foods and healthy products for every day.</p>
+    </div>
+    <div class="row g-4 ">
+      <div class="col-sm-12 col-md-3">
+        <div class="card rounded-5 p-3 align-items-center justify-content-center">
+          <img src="./image/catg-pasta.png" class="img-fluid" style="width: 170px;" alt="">
+          <p class="fs-5 fw-medium pt-2">Pasta</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card rounded-5 p-3 align-items-center justify-content-center">
+          <img src="./image/catg-pizza.png" class="img-fluid" style="width: 170px;" alt="">
+          <p class="fs-5 fw-medium pt-2">Pizza</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card rounded-5 p-3 align-items-center justify-content-center">
+          <img src="./image/catg-kebab.jpg" class="img-fluid rounded-circle" style="width: 170px;" alt="">
+          <p class="fs-5 fw-medium pt-2">Kebab</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card rounded-5 p-3 align-items-center justify-content-center">
+          <img src="./image/catg-chinese.png" class="img-fluid" style="width: 170px;" alt="">
+          <p class="fs-5 fw-medium pt-2">Chinese</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card rounded-5 p-3 align-items-center justify-content-center">
+          <img src="./image/catg-rice.png" class="img-fluid" style="width: 170px;" alt="">
+          <p class="fs-5 fw-medium pt-2">Rice</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card rounded-5 p-3 align-items-center justify-content-center">
+          <img src="./image/catg-sandwich.png" class="img-fluid" style="width: 170px;" alt="">
+          <p class="fs-5 fw-medium pt-2">Sandwich</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card rounded-5 p-3 align-items-center justify-content-center">
+          <img src="./image/catg-burger.png" class="img-fluid" style="width: 170px;" alt="">
+          <p class="fs-5 fw-medium pt-2">Burger</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card rounded-5 p-3 align-items-center justify-content-center">
+          <img src="./image/catg-salad.png" class="img-fluid" style="width: 170px;" alt="">
+          <p class="fs-5 fw-medium pt-2">Mix Salad</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container-->
+  <div class="container-fluid py-5 bg-second-color">
+    <div class="container my-5">
+      <!-- Row-->
+      <div class="row align-items-center ">
+        <!-- Col -->
+        <div class="col-lg-6">
+          <!-- Row -->
+          <div class="row g-3">
+            <div class="col-6 text-start">
+              <img class="img-fluid rounded w-100 wow zoomIn" src="./image/about-1.jpg" alt="" />
+            </div>
+            <div class="col-6 text-start">
+              <img class="img-fluid rounded w-75 wow zoomIn" src="./image/about-2.jpg" style="margin-top: 25%" alt="" />
+            </div>
+            <div class="col-6 text-end">
+              <img class="img-fluid rounded w-75 wow zoomIn" src="./image/about-3.jpg" alt="" />
+            </div>
+            <div class="col-6 text-end">
+              <img class="img-fluid rounded w-100 wow zoomIn" src="./image/about-4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- Col -->
+        <div class="col-lg-6">
+          <p class="text-start text-uppercase p-0">About us</p>
+          <h1 class="mb-4">
+            Welcome to our Restaurant!</h1>
+          <p class="mb-3">
+            We’re passionate about our food
+          </p>
+          <p class="mb-3">
+            Our Restaurant is a collective of amazing people striving to build delightful Austrian Cuisine.
+          </p>
+          <!-- Row -->
+          <div class="row g-4">
+            <div class="col-sm-5">
+              <!-- Button modal -->
+              <button class="btn-about-us" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Viev More
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="exampleModalLabel">
+                        Welcome to TastyStop
+                      </h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-5 ">
+                          <img class="img-fluid" src="./image/bg-cover.jpg" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h3 class="pt-3">
+                            Welcome to Meal, where food speaks with your
+                            palate.
+                          </h3>
+                          <p class="pt-3">
+                            Our restaurant was born out of a love for eggs and a desire to share that passion with
+                            others. Our founder, Jack bloom, has always been fascinated by the versatility and nutrition
+                            of eggs, and he wanted to create a restaurant that celebrated this incredible ingredient
+                          </p>
+                          <p>
+                            At our restaurant, we believe that eggs are one of the most versatile and delicious
+                            ingredients out there. That's why we've made it our mission to create exceptional egg-based
+                            dishes that showcase the incredible flavors and textures that eggs can offer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section Bg -->
+  <section class="hero-section d-flex align-items-center justify-content-center text-white" style="
+      background-image: url('image/bg-kebab-grill.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 65vh;">
+  </section>
+  <!-- Here is Container Menu -->
+  <div class="container-fluid py-5" id="our-menu">
+    <!-- Container -->
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s"
+        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <h5 class="section-title-menu text-center">Our Menu</h5>
+      </div>
+      <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s"
+        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+          <li class="nav-item">
+            <a class="text-decoration-none d-flex align-items-center text-start mx-3 pb-3 active" data-bs-toggle="pill"
+              href="#tab-1">
+              <i class="fa fa-coffee fa-2x text-orange-red"></i>
+              <div class="ps-3">
+                <p class="mt-n1 mb-0 title-menu">Drinks</p>
+              </div>
+            </a>
+          </li>
+          <!-- NavItem -->
+          <li class="nav-item">
+            <a class="text-decoration-none d-flex align-items-center text-start mx-4 pb-3" data-bs-toggle="pill"
+              href="#tab-2">
+              <i class="fa fa-hamburger fa-2x text-orange-red"></i>
+              <div class="ps-3">
+                <p class="mt-n1 mb-0 title-menu">Launch</p>
+              </div>
+            </a>
+          </li>
+          <!-- NavItem -->
+          <li class="nav-item">
+            <a class="text-decoration-none d-flex align-items-center text-start pb-3" data-bs-toggle="pill"
+              href="#tab-3">
+              <i class="fa fa-utensils fa-2x text-orange-red"></i>
+              <div class="ps-3">
+                <p class="mt-n1 mb-0 title-menu">Dinner</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <!-- Tab Content 1 -->
+          <div id="tab-1" class="tab-pane fade show py-5 active">
+            <div class="row g-5 justify-content-center">
+              <!-- Col - 1 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/coca.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Coca Cola</span>
+                      <span class="text-org-red">1.49 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 2 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/fanta-org.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Fanta Orange</span>
+                      <span class="text-org-red">1.49 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 3 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/sprite.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Sprite</span>
+                      <span class="text-org-red">1.39 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 4 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/redbull.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>RedBull</span>
+                      <span class="text-org-red">1.99 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 5 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/ice-tea.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Ice Tea</span>
+                      <span class="text-org-red">1.49 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 6 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/mineral-water.png" alt="kebab-grill"
+                    style="width: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Mineral Water</span>
+                      <span class="text-org-red">1.29 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 7 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/orange-juice.png" alt="kebab-grill"
+                    style="width: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Orange Juice</span>
+                      <span class="text-org-red">1.49 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 8 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/apple-juice.png" alt="kebab-grill"
+                    style="width: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Apple Juice</span>
+                      <span class="text-org-red">1.49 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tab Content 2 -->
+          <div id="tab-2" class="tab-pane fade show py-5">
+            <div class="row g-5 justify-content-center">
+              <!-- Col - 1 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-1.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Carrot Cake</span>
+                      <span class="text-org-red">7.99 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 2 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-2.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Egg Crepes</span>
+                      <span class="text-org-red">5.25 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 3 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-3.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Salad</span>
+                      <span class="text-org-red">4.45 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 4 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-4.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Garlic Shrimp</span>
+                      <span class="text-org-red">8.50 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 5 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-5.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Tomato Bruscheta</span>
+                      <span class="text-org-red">7.49 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 6 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-6.png" alt="kebab-grill"
+                    style="width: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Salmon</span>
+                      <span class="text-org-red">9.49 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 7 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-1.png" alt="kebab-grill"
+                    style="width: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Pizza Family</span>
+                      <span class="text-org-red">12.99 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 8 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-2.png" alt="kebab-grill"
+                    style="width: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Chicken + Rice</span>
+                      <span class="text-org-red">7.99 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Tab Content 3 -->
+          <div id="tab-3" class="tab-pane fade show py-5">
+            <div class="row g-5 justify-content-center">
+              <!-- Col - 1 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-1.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Carrot Cake</span>
+                      <span class="text-org-red">7.99 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 2 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-2.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Egg Crepes</span>
+                      <span class="text-org-red">5.25 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 3 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-3.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Salad</span>
+                      <span class="text-org-red">4.45 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 4 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-4.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Garlic Shrimp</span>
+                      <span class="text-org-red">8.50 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 5 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-5.png" alt="kebab-grill"
+                    style="height: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Tomato Bruscheta</span>
+                      <span class="text-org-red">7.49 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 6 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-6.png" alt="kebab-grill"
+                    style="width: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Salmon</span>
+                      <span class="text-org-red">9.49 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 7 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-1.png" alt="kebab-grill"
+                    style="width: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Pizza Family</span>
+                      <span class="text-org-red">12.99 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Col - 8 -->
+              <div class="col-sm-12 col-lg-6">
+                <div class="d-flex align-items-center">
+                  <img class="flex-shrink-0 img-fluid rounded" src="./image/start-2.png" alt="kebab-grill"
+                    style="width: 80px;">
+                  <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between">
+                      <span>Chicken + Rice</span>
+                      <span class="text-org-red">7.99 &#8364;</span>
+                    </h5>
+                    <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xxl pt-4 pt-sm-4 rounded-pill bg-my-color">
+    <div class="container py-5">
+      <div class="row p-sm-5 align-content-center justify-content-center">
+        <div class="col-sm-12 col-lg-4 mt-3">
+          <p>Frequently Asked Questions</p>
+          <h2 class="fs-1 fw-bold">Meet, Eat & <div class="text-org-red">Enjoy</div> the true Taste.</h2>
+          <p class="fs-6 fw-normal lh-md">Everything you need to know about our services and how we can help you
+            success.</p>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button py-4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Do you offer home delivery or takeaway options?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <p class="accordion-body">
+                  Yes, we offer both home delivery and takeaway options. You can place your order online and choose the method that suits you best, fast delivery to your address or direct pickup from our location.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  What are your opening hours and days?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <p class="accordion-body">
+                  We are open every day from Monday to Sunday, from 09:00 to 22:00. Our flexible hours allow you to order or visit our restaurant at a time that suits you best.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Is reservation required or can we walk in anytime?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <p class="accordion-body">
+                  Reservations are not required you can come without a reservation. However, to ensure you have a seat, especially during weekends or busy times, we recommend making a reservation in advance.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Do you have vegetarian or vegan options?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <p class="accordion-body">
+                  Yes, we offer a wide selection of vegetarian and vegan options. Each dish is carefully prepared to be delicious and balanced, using only fresh, natural ingredients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container -->
+  <div class="container-fluid">
+    <div class="container pt-5 pb-1">
+      <h3 class="text-start text-decoration-underline fs-3 fw-bold">Restaurant ambients</h3>
+      <p class="text-start fs-5">Enoy our places</p>
+      <!-- Row -->
+      <div class="row pt-3">
+        <div class="col-sm-12 col-md-3 px-2 mb-3">
+          <img class="img-fluid" src="image/amb-1.jpg" alt="">
+        </div>
+        <div class="col-sm-12 col-md-3 px-2 mb-3">
+          <img class="img-fluid" src="image/amb-2.jpg" alt="">
+        </div>
+        <div class="col-sm-12 col-md-3 px-2 mb-3">
+          <img class="img-fluid" src="image/amb-3.jpg" alt="">
+        </div>
+        <div class="col-sm-12 col-md-3 px-2 mb-3">
+          <img class="img-fluid" src="image/amb-4.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container Fluid -->
+  <div class="container-fluid bg-footer text-white">
+    <div class="container py-5">
+      <!-- Footer -->
+      <div class="row justify-content-center row-gap-4">
+        <!-- Col - 1 -->
+        <div class="col-sm-12 col-lg-3 pt-4 pt-sm-4 p-0 pe-5">
+          <h4 class="fs-3">TastyStop</h4>
+          <ul class="nav flex-column">
+            <p class="nav-item mb-2">Be the first to know about new collections, special events, and what's going on at
+              Our Place. We are creative.</p>
+          </ul>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#"><i class="sc-icons fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="sc-icons fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="sc-icons fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <!-- Col - 2 -->
+        <div class="col-sm-12 col-lg-3 pt-4 pt-sm-4 p-0">
+          <h4>Overview</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+            <li class="nav-item mb-2"><a href="./about.html" class="text-white text-decoration-none">About</a></li>
+            <li class="nav-item mb-2"><a href="./menu.html" class="text-white text-decoration-none">Menu</a></li>
+            <li class="nav-item mb-2"><a href="./contact.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Col - 3 -->
+        <div class="col-sm-12 col-lg-3 pt-4 pt-sm-4 p-0">
+          <h4>Resources</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">HelpCenter</li>
+            <li class="nav-item mb-2">Terms of use</li>
+            <li class="nav-item mb-2">Privacy Policy</li>
+            <li class="nav-item mb-2">Teams</li>
+            <li class="nav-item mb-2">FAQ</li>
+          </ul>
+        </div>
+        <!-- Col - 4 -->
+        <div class="col-sm-12 col-md-2 pt-3 pt-sm-4 p-0">
+          <h4>Location</h4>
+          <ul class="nav">
+            <img class="img-fluid" src="image/belgium-map.png" alt="">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="w-100 m-0">
+    <div class="container text-center py-3">
+      <p>Copyright © 2024 The TastyStop</p>
+    </div>
+  </div>
+  <!-- Footer End -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

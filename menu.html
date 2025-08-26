@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/ceb1d23e01.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./my.css" />
+  <title>Kebab & Grill - Menu</title>
+</head>
+
+<body class="p-0 m-0 border-0 bd-example m-0 border-0">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary py-3">
+    <div class="container">
+      <div class="d-flex">
+        <img src="image/logo.png" class="img-fluid" style="height: 40px;" alt="TastyStop">
+        <a href="./index.html" class="navbar-brand fs-5 fw-bold ps-2">TastyStop</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link fs-5" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link fs-5">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./menu.html" class="nav-link fs-5 active-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link fs-5">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-3">
+          <a href="#"><i class="fa-solid fa-user-plus"></i></a>
+          <button class="btn-reservation" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            Reservation
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End NavBar -->
+
+  <!-- Modal -->
+  <div class="modal align-content-center fade" id="reservationModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">
+            Reserve a table
+          </h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form class="row g-3 justify-content-center">
+            <div class="col-sm-12">
+              <label for="validationDefault01" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="validationDefault01" required>
+            </div>
+            <div class="col-sm-12">
+              <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="col-sm-12">
+              <label for="validationDefault04" class="form-label">Number of Guests</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 & More</option>
+              </select>
+            </div>
+            <div class="col-sm-12">
+              <label for="date" class="form-label">Date of Reservation</label>
+              <input type="date" class="form-control" id="date" name="date">
+            </div>
+            <div class="col-sm-12">
+              <label for="time" class="form-label">Time of Reservation</label>
+              <input type="time" class="form-control" id="time" name="time">
+            </div>
+            <div class="col-sm-12">
+              <label for="validationDefault03" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-sm-12">
+              <label for="exampleFormControlTextarea1" class="form-label">Special Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-sm-12">
+              <button class="btn btn-primary text-center" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal NavBar -->
+  <!-- Section Bg -->
+  <section class="container-fluid d-flex align-items-center justify-content-center" style="
+      background-image: url('image/img-about-us.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 45vh;">
+    <div class="container text-center">
+      <h1 class="display-2 text-white mb-3">Our Menu</h1>
+      <div>
+        <div class="d-flex gap-3 justify-content-center text-uppercase">
+          <p class="text-white fs-3">
+            <a class="text-decoration-none text-orange-red" href="index.html">Home</a>
+          </p>
+          <p class="text-white fs-3 active">Menu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Container Menu List Lunch -->
+  <div class="container py-5">
+    <h2 class="text-center py-5">Main Courses</h2>
+    <row class="row">
+      <!-- Col - 1 -->
+      <div class="col-sm-12 col-lg-6 pb-3">
+        <div class="d-flex justify-content-between">
+          <h5>Corn fed chicken</h5>
+          <span class="text-org-red fs-5 fw-medium">22.79 &#8364;</span>
+        </div>
+        <p class="fst-normal">Wild mushrooms, truffle potatoes, braised leeks carrots</p>
+      </div>
+      <!-- Col - 2 -->
+      <div class="col-sm-12 col-lg-6 pb-3">
+        <div class="d-flex justify-content-between">
+          <h5>Pan seared scallops</h5>
+          <span class="text-org-red fs-5 fw-medium">12.40 &#8364;</span>
+        </div>
+        <p class="fst-normal">Saffron, celeriac puree, black pudding, Parma ham</p>
+      </div>
+      <!-- Col - 3 -->
+      <div class="col-sm-12 col-lg-6 pb-3">
+        <div class="d-flex justify-content-between">
+          <h5>Roasted lamb rump</h5>
+          <span class="text-org-red fs-5 fw-medium">6.99 &#8364;</span>
+        </div>
+        <p class="fst-normal">Grilled lamb cutlets, pomegranate glaze, butternut squash</p>
+      </div>
+      <!-- Col - 4 -->
+      <div class="col-sm-12 col-lg-6 pb-3">
+        <div class="d-flex justify-content-between">
+          <h5>King prawns and lobster</h5>
+          <span class="text-org-red fs-5 fw-medium">2.30 &#8364;</span>
+        </div>
+        <p class="fst-normal">Creamy saffron, sauce Vierge</p>
+      </div>
+      <!-- Col -5 -->
+      <div class="col-sm-12 col-lg-6 pb-3">
+        <div class="d-flex justify-content-between">
+          <h5>Braised ox cheek ravioli</h5>
+          <span class="text-org-red fs-5 fw-medium">9.50 &#8364;</span>
+        </div>
+        <p class="fst-normal">Mediterranean olives casserole, celeriac puree, mushrooms</p>
+      </div>
+      <!-- Col-lg-1 -->
+      <div class="col-sm-12 col-lg-6 pb-3">
+        <div class="d-flex justify-content-between">
+          <h5>Corn fed chicken</h5>
+          <span class="text-org-red fs-5 fw-medium">9.99 &#8364;</span>
+        </div>
+        <p class="fst-normal">Wild mushrooms, truffle potatoes, braised leeks carrots</p>
+      </div>
+      <!-- Col-lg-1 -->
+      <div class="col-sm-12 col-lg-6 pb-3">
+        <div class="d-flex justify-content-between">
+          <h5>Pan seared scallops</h5>
+          <span class="text-org-red fs-5 fw-medium">12.50 &#8364;</span>
+        </div>
+        <p class="fst-normal">Saffron, celeriac puree, black pudding, Parma ham</p>
+      </div>
+      <!-- Col-lg-1 -->
+      <div class="col-sm-12 col-lg-6 pb-3">
+        <div class="d-flex justify-content-between">
+          <h5>Baked Camembert</h5>
+          <span class="text-org-red fs-5 fw-medium">15.00 &#8364;</span>
+        </div>
+        <p class="fst-normal">Red onion marmelade, garlic Foccacia bread, grilled figs</p>
+      </div>
+      <!-- Col-lg-1 -->
+      <div class="col-sm-12 col-lg-6 pb-3">
+        <div class="d-flex justify-content-between">
+          <h5>Beef burger meal</h5>
+          <span class="text-org-red fs-5 fw-medium">11.99 &#8364;</span>
+        </div>
+        <p class="fst-normal">Classic Greek salad, barrel aged Feta cheese, pitta bread</p>
+      </div>
+    </row>
+  </div>
+  <!-- Section Bg About Lunch -->
+  <section class="container d-flex align-items-center justify-content-center rounded-5" style="
+      background-image: url('image/bg-lunch.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 50vh;">
+    <h1 class="display-2 text-white mb-3">Lunch</h1>
+  </section>
+  <!-- Container Menu List Lunch -->
+  <div class="container py-5">
+    <div class="row py-5 g-4">
+      <!-- Col - 1 -->
+      <div class="col-sm-12 col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-1.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Cheese Burger</span>
+              <span class="text-org-red">5.99 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 2 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-2.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Cheeese Sandwich</span>
+              <span class="text-org-red">5.50 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 3 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-3.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Chicken Burger</span>
+              <span class="text-org-red">6.50 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 4 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-4.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Spagetti</span>
+              <span class="text-org-red">4.99 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 5 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-5.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Pasta</span>
+              <span class="text-org-red">7.49 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 6 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-6.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Chicken Kebab</span>
+              <span class="text-org-red">5.99 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 7 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-1.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Doner Kebab</span>
+              <span class="text-org-red">6.99 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 8 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-2.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Mini Burger</span>
+              <span class="text-org-red">4.99 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section Bg About Dinner -->
+  <section class="container d-flex align-items-center justify-content-center rounded-5" style="
+      background-image: url('image/bg-dinner.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 50vh;">
+    <h1 class="display-2 text-white mb-3">Dinner</h1>
+  </section>
+  <!-- Container Menu List Dinner -->
+  <div class="container py-5">
+    <div class="row py-5 g-4">
+      <!-- Col - 1 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-1.png" alt="kebab-grill"
+            style="height: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Carrot Cake</span>
+              <span class="text-org-red">7.99 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 2 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-2.png" alt="kebab-grill"
+            style="height: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Egg Crepes</span>
+              <span class="text-org-red">5.25 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 3 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-3.png" alt="kebab-grill"
+            style="height: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Salad</span>
+              <span class="text-org-red">4.45 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 4 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-4.png" alt="kebab-grill"
+            style="height: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Garlic Shrimp</span>
+              <span class="text-org-red">8.50 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 5 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-5.png" alt="kebab-grill"
+            style="height: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Tomato Bruscheta</span>
+              <span class="text-org-red">7.49 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 6 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-6.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Salmon</span>
+              <span class="text-org-red">9.49 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 7 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-1.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Pizza Family</span>
+              <span class="text-org-red">12.99 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+      <!-- Col - 8 -->
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <img class="flex-shrink-0 img-fluid rounded" src="./image/start-2.png" alt="kebab-grill" style="width: 80px;">
+          <div class="w-100 d-flex flex-column text-start ps-4">
+            <h5 class="d-flex justify-content-between">
+              <span>Chicken + Rice</span>
+              <span class="text-org-red">7.99 &#8364;</span>
+            </h5>
+            <small class="fst-normal">Ipsum ipsum clita erat amet dolor justo diam</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Container Fluid Restaurant Ambient -->
+  <div class="container-fluid py-5 bg-ambient h-100">
+    <h3 class="py-3 text-center">Restaurant Ambients</h3>
+    <div class="row justify-content-center gap-5 text-center py-3">
+      <div class="col-sm-12 col-lg-2 fs-5"><i class="fa-solid fa-wifi"></i> Free Wifi</div>
+      <div class="col-sm-12 col-lg-2 fs-5"><i class="fa-solid fa-smoking"></i> Smoking Zone</div>
+      <div class="col-sm-12 col-lg-2 fs-5"><i class="fa-solid fa-music"></i> Live Music</div>
+      <div class="col-sm-12 col-lg-2 fs-5"><i class="fa-solid fa-car"></i> Parking</div>
+    </div>
+  </div>
+  <!-- Container Fluid -->
+  <div class="container-fluid bg-footer text-white">
+    <div class="container py-5">
+      <!-- Footer -->
+      <div class="row justify-content-center row-gap-4">
+        <!-- Col - 1 -->
+        <div class="col-sm-12 col-lg-3 pt-4 pt-sm-4 p-0 pe-5">
+          <h4 class="fs-3">TastyStop</h4>
+          <ul class="nav flex-column">
+            <p class="nav-item mb-2">Be the first to know about new collections, special events, and what's going on at
+              Our Place. We are creative.</p>
+          </ul>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#"><i class="sc-icons fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="sc-icons fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="sc-icons fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <!-- Col - 2 -->
+        <div class="col-sm-12 col-lg-3 pt-4 pt-sm-4 p-0">
+          <h4>Overview</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+            <li class="nav-item mb-2"><a href="./about.html" class="text-white text-decoration-none">About</a></li>
+            <li class="nav-item mb-2"><a href="./menu.html" class="text-white text-decoration-none">Menu</a></li>
+            <li class="nav-item mb-2"><a href="./contact.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Col - 3 -->
+        <div class="col-sm-12 col-lg-3 pt-4 pt-sm-4 p-0">
+          <h4>Resources</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">HelpCenter</li>
+            <li class="nav-item mb-2">Terms of use</li>
+            <li class="nav-item mb-2">Privacy Policy</li>
+            <li class="nav-item mb-2">Teams</li>
+            <li class="nav-item mb-2">FAQ</li>
+          </ul>
+        </div>
+        <!-- Col - 4 -->
+        <div class="col-sm-12 col-md-2 pt-3 pt-sm-4 p-0">
+          <h4>Location</h4>
+          <ul class="nav">
+            <img class="img-fluid" src="image/belgium-map.png" alt="">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="w-100 m-0">
+    <div class="container text-center py-3">
+      <p>Copyright © 2024 The TastyStop</p>
+    </div>
+  </div>
+  <!-- Footer End -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

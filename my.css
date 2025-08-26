@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+/* Button up arrow */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 18px;
+  z-index: 99;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  border: 2px solid #eb4d4b;
+  outline: none;
+  background-color: #fff;
+  color: #eb4d4b;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.fa-arrow-up {
+  font-size: 28px;
+}
+
+.active-link {
+  text-decoration: underline;
+  color: #3b5998 !important;
+}
+
+.fa-cart-plus {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  position: relative;
+  align-content: center;
+  text-align: center;
+  border: 2px solid #eb4d4b;
+  border-radius: 50%;
+  color: #eb4d4b;
+}
+
+.fa-user-plus {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  position: relative;
+  align-content: center;
+  text-align: center;
+  border: 2px solid #eb4d4b;
+  border-radius: 50%;
+  color: #eb4d4b;
+}
+
+.btn-reservation {
+  width: 150px;
+  font-size: 17px;
+  font-weight: 600;
+  border: 2px solid #eb4d4b;
+  border-radius: 25px;
+  color: #eb4d4b;
+  background-color: #fff;
+}
+
+.fa-cart-plus:hover, .fa-user-plus:hover, .btn-reservation:hover {
+  background-color: #eb4d4b;
+  color: #fff;
+  transition: .35s ease-in-out;
+}
+
+/* Bg-image on Home Page */
+.bg-my-color {
+  background-color: #f6f3f0;
+  position: relative;
+}
+
+.title-section {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.para-section {
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  color: #eb4d4b;
+}
+
+.btn-view-menu {
+  margin-top: 12px;
+  padding: 10px 18px;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #ccd5ae;
+  color: #2c6e49;
+}
+
+/* Button About US */
+.btn-about-us {
+  padding: 10px 15px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 2px solid #eb4d4b;
+  background-color: #fff;
+  color: #eb4d4b;
+}
+
+/* Button Services */
+.btn-services {
+  padding: 8px 17px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  border: 2px solid #2d3142;
+  background-color: #fff;
+  color: #2d3142;
+} 
+
+.sc-icons {
+  width: 50px;
+  height: 50px;
+  line-height: 2.75rem;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  transition: all 150ms;
+  border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%;
+  background-color: #2d3142;
+  justify-content: space-between;
+}
+
+.title-menu-list {
+  font-size: 19px;
+}
+
+.text-orange-red {
+  color: #eb4d4b;
+  text-decoration: none;
+}
+
+.text-org-red {
+  color: #eb4d4b;
+  text-decoration: none !important;
+}
+
+.section-title-menu {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #004d43;
+}
+
+.title-menu {
+  color: #111330;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Bg-color ambient on About Page */
+.bg-ambient {
+  height: 30vh;
+  background-color: #fff7f1;
+}
+
+/* Those are icons on About Page */
+.fa-wifi,
+.fa-smoking,
+.fa-music,
+.fa-car {
+  font-size: 25px;
+  color: #eb4d4b;
+}
+
+/* Bg-color Contact Page */
+.bg-contact {
+  background-color: #dfe0dc;
+}
+
+.bg-footer {
+  background-color: #091d33;
+}
+
+/* Title Contact Address */
+.contact-address {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: none;
+  color: #006d77;
+}
+
+/* This is for class location and phone in Contact Page */
+.location,
+.phone {
+  font-size: 22px;
+  display: flex;
+}
+
+/* This class is for border around form in Contact Page */
+.border-around {
+  border: 5px solid #e3e3e3;
+}
+
+/* Icon quote left on slider */
+.fa-quote-left {
+  color: #eb4d4b;
+}
+
+/* Icon Facebook Footer */
+.fa-facebook {
+  font-size: 25px;
+  color: #3b5998;
+}
+
+/* Icon Instagram Footer */
+.fa-instagram {
+  font-size: 25px;
+  color: #eb4d4b;
+}
+
+/* Icon Twitter Footer */
+.fa-twitter {
+  font-size: 25px;
+  color: aquamarine;
+}
+
+@media screen and (max-width: 600px) {
+
+  .title-section {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .para-section {
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+}
